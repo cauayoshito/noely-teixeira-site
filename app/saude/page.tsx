@@ -1,53 +1,101 @@
-import CoverageCard from '@/components/CoverageCard';
-import CTASection from '@/components/CTASection';
+import CoverageCard from "@/components/CoverageCard";
+import CTASection from "@/components/CTASection";
 
 export const metadata = {
-  title: 'Plano de Saúde em Salvador',
+  title: "Plano de Saúde em Salvador",
   description:
-    'Descubra planos de saúde individuais, familiares e empresariais em Salvador/BA com consultoria personalizada da Noely Teixeira.',
+    "Descubra planos de saúde individuais, familiares e empresariais em Salvador/BA com consultoria personalizada da Noely Teixeira.",
 };
 
 export default function SaudePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gray-50 py-16 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto text-center space-y-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">Planos de Saúde sob medida para você</h1>
-          <p className="text-gray-700 max-w-3xl mx-auto">
-            Descubra opções individuais, familiares e empresariais com cobertura ampla e preço acessível. Conte com nossa consultoria para encontrar a melhor operadora.
+      <section className="page-section bg-white/80">
+        <div className="content-wrapper max-w-5xl text-center space-y-5">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            Planos de Saúde sob medida para você
+          </h1>
+          <p className="text-gray-700 mx-auto max-w-3xl leading-relaxed">
+            Descubra opções individuais, familiares e empresariais com cobertura
+            ampla e preço acessível. Conte com nossa consultoria para encontrar
+            a melhor operadora.
           </p>
         </div>
       </section>
 
       {/* Como funciona */}
-      <section className="py-12 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto space-y-4">
+      <section className="page-section">
+        <div className="content-wrapper max-w-5xl space-y-5">
           <h2 className="text-2xl font-bold text-gray-900">Como funciona</h2>
           <p className="text-gray-700 leading-relaxed">
-            A contratação de um plano de saúde começa com uma avaliação detalhada do seu perfil e das necessidades da sua família ou empresa. Em seguida, pesquisamos e comparamos as operadoras disponíveis, analisando preços, rede credenciada e benefícios. Por fim, apresentamos as melhores opções para que você escolha com segurança e economia.
+            A contratação de um plano de saúde começa com uma avaliação
+            detalhada do seu perfil e das necessidades da sua família ou
+            empresa. Em seguida, pesquisamos e comparamos as operadoras
+            disponíveis, analisando preços, rede credenciada e benefícios. Por
+            fim, apresentamos as melhores opções para que você escolha com
+            segurança e economia.
           </p>
         </div>
       </section>
 
       {/* Principais coberturas */}
-      <section className="py-12 px-4 md:px-8 bg-gray-50">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Principais coberturas</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <CoverageCard title="Consultas e exames" description="Consultas médicas e exames laboratoriais em ampla rede credenciada." />
-            <CoverageCard title="Internação hospitalar" description="Cobertura de internações clínicas e cirúrgicas com acomodação confortável." />
-            <CoverageCard title="Rede credenciada ampla" description="Hospitais, clínicas e laboratórios de referência em Salvador e região." />
-            <CoverageCard title="Atendimento de urgência" description="Pronto atendimento 24h para emergências médicas." />
+      <section className="page-section bg-gradient-to-b from-white via-sky-50/70 to-white">
+        <div className="content-wrapper max-w-5xl space-y-6">
+          <div className="space-y-2">
+            <h2 className="text-2xl font-bold text-gray-900">
+              Principais coberturas
+            </h2>
+            <p className="text-gray-700 max-w-3xl leading-relaxed">
+              Leia cada cobertura com contraste elevado e cartões espaçosos.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <CoverageCard
+              title="Consultas e exames"
+              description="Consultas médicas e exames laboratoriais em ampla rede credenciada."
+            />
+            <CoverageCard
+              title="Internação hospitalar"
+              description="Cobertura de internações clínicas e cirúrgicas com acomodação confortável."
+            />
+            <CoverageCard
+              title="Rede credenciada ampla"
+              description="Hospitais, clínicas e laboratórios de referência em Salvador e região."
+            />
+            <CoverageCard
+              title="Atendimento de urgência"
+              description="Pronto atendimento 24h para emergências médicas."
+            />
           </div>
         </div>
       </section>
 
       {/* Motivational stripe */}
-      <section className="py-12 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto bg-secondary text-white rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-bold mb-2">Mais que uma corretora, uma parceira na sua segurança.</h3>
-          <p>Estamos ao seu lado em todas as etapas, antes e depois da contratação.</p>
+      <section className="page-section">
+        <div className="content-wrapper max-w-5xl overflow-hidden rounded-3xl bg-gradient-to-r from-slate-900 via-secondary to-primary text-white px-8 py-10 shadow-2xl ring-1 ring-white/10">
+          <div className="flex flex-col gap-4 text-center md:text-left md:flex-row md:items-center md:justify-between">
+            <div className="space-y-3 max-w-2xl">
+              <p className="inline-flex rounded-full bg-white/10 px-4 py-1 text-sm font-semibold text-amber-200 ring-1 ring-white/15">
+                Consultoria próxima e transparente
+              </p>
+              <h3 className="text-2xl font-bold leading-tight">
+                Mais que uma corretora, uma parceira na sua segurança.
+              </h3>
+              <p className="leading-relaxed text-slate-100/90">
+                Estamos ao seu lado em todas as etapas, antes e depois da
+                contratação.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-3 md:items-end">
+              <span className="rounded-xl bg-white/15 px-4 py-3 text-sm font-semibold text-white ring-1 ring-white/20">
+                Atendimento humano e ágil
+              </span>
+              <span className="rounded-xl bg-white/15 px-4 py-3 text-sm font-semibold text-white ring-1 ring-white/20">
+                Planos adequados ao seu perfil
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
