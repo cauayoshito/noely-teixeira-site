@@ -21,16 +21,16 @@ const baseClasses =
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-slate-900 hover:shadow-lg hover:-translate-y-0.5 focus-visible:outline-amber-500",
+    "bg-[var(--color-primary)] text-[var(--color-secondary)] hover:shadow-lg hover:-translate-y-0.5 focus-visible:outline-[var(--color-primary)]",
   secondary:
-    "bg-slate-900 text-white hover:bg-slate-800 hover:shadow-lg focus-visible:outline-slate-900",
+    "bg-[var(--color-secondary)] text-white hover:bg-slate-800 hover:shadow-lg focus-visible:outline-[var(--color-secondary)]",
   ghost:
-    "bg-white/70 text-slate-900 border border-slate-200 hover:bg-white hover:shadow-md backdrop-blur focus-visible:outline-amber-400",
+    "border border-slate-200 bg-white/80 text-[var(--color-secondary)] hover:bg-white hover:shadow-md backdrop-blur focus-visible:outline-[var(--color-primary)]",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
-  md: "px-4 py-2 text-sm",
-  lg: "px-6 py-3 text-base",
+  md: "px-4 py-2.5 text-sm",
+  lg: "px-6 py-3.5 text-base",
 };
 
 function cn(...classes: Array<string | false | null | undefined>) {

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 /**
@@ -24,7 +25,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl">
-      {/* Mini bar with contact and social icons */}
+      {/* Mini bar */}
       <div className="bg-slate-900 text-white text-sm">
         <div className="content-wrapper flex flex-wrap items-center justify-between gap-2 py-2">
           <div className="flex items-center space-x-3">
@@ -41,6 +42,7 @@ export default function Header() {
               WhatsApp: (71) 99629-0118
             </a>
           </div>
+
           <div className="flex items-center gap-3 text-white/80">
             <a
               href="https://www.instagram.com"
@@ -62,15 +64,18 @@ export default function Header() {
       {/* Main navigation */}
       <div className="relative bg-white/90 py-4 shadow-[0_8px_30px_rgba(0,0,0,0.05)] ring-1 ring-slate-100">
         <div className="content-wrapper flex items-center justify-between gap-6">
-          <Link
-            href="/"
-            className="text-lg md:text-2xl font-bold text-slate-900"
-          >
-            Noely Teixeira
-            <span className="block text-xs font-semibold text-amber-500 uppercase tracking-[0.1em]">
-              Corretora de Seguros
-            </span>
+          {/* Logo + textos */}
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/images/noelylogo.webp"
+              alt="Noely Teixeira Logo"
+              width={140}
+              height={60}
+              className="h-auto w-auto"
+              priority
+            />
           </Link>
+
           {/* Desktop menu */}
           <nav className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
@@ -82,6 +87,7 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
+
             <a
               href="https://api.whatsapp.com/send?phone=5571996290118"
               className="inline-flex items-center rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
@@ -91,6 +97,7 @@ export default function Header() {
               Fazer cotação
             </a>
           </nav>
+
           {/* Hamburger button */}
           <button
             type="button"
@@ -103,7 +110,8 @@ export default function Header() {
             <span className="w-full h-0.5 rounded-full bg-slate-800"></span>
           </button>
         </div>
-        {/* Mobile menu overlay */}
+
+        {/* Mobile menu */}
         {mobileOpen && (
           <div className="md:hidden mt-4 rounded-2xl border border-slate-100 bg-white/90 shadow-lg">
             <nav className="flex flex-col divide-y divide-slate-100">
@@ -117,6 +125,7 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
+
               <a
                 href="https://api.whatsapp.com/send?phone=5571996290118"
                 className="py-3 px-4 font-semibold text-amber-600 hover:bg-amber-50"

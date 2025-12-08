@@ -1,5 +1,6 @@
 import CoverageCard from "@/components/CoverageCard";
 import CTASection from "@/components/CTASection";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = {
   title: "Plano de Saúde em Salvador",
@@ -10,19 +11,11 @@ export const metadata = {
 export default function SaudePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="page-section bg-white/80">
-        <div className="content-wrapper max-w-5xl text-center space-y-5">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-            Planos de Saúde sob medida para você
-          </h1>
-          <p className="text-gray-700 mx-auto max-w-3xl leading-relaxed">
-            Descubra opções individuais, familiares e empresariais com cobertura
-            ampla e preço acessível. Conte com nossa consultoria para encontrar
-            a melhor operadora.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        badge="Planos de Saúde"
+        title="Planos de Saúde sob medida para você"
+        subtitle="Descubra opções individuais, familiares e empresariais com cobertura ampla e preço acessível. Conte com nossa consultoria para encontrar a melhor operadora."
+      />
 
       {/* Como funciona */}
       <section className="page-section">
@@ -67,34 +60,6 @@ export default function SaudePage() {
               title="Atendimento de urgência"
               description="Pronto atendimento 24h para emergências médicas."
             />
-          </div>
-        </div>
-      </section>
-
-      {/* Motivational stripe */}
-      <section className="page-section">
-        <div className="content-wrapper max-w-5xl overflow-hidden rounded-3xl bg-gradient-to-r from-slate-900 via-secondary to-primary text-white px-8 py-10 shadow-2xl ring-1 ring-white/10">
-          <div className="flex flex-col gap-4 text-center md:text-left md:flex-row md:items-center md:justify-between">
-            <div className="space-y-3 max-w-2xl">
-              <p className="inline-flex rounded-full bg-white/10 px-4 py-1 text-sm font-semibold text-amber-200 ring-1 ring-white/15">
-                Consultoria próxima e transparente
-              </p>
-              <h3 className="text-2xl font-bold leading-tight">
-                Mais que uma corretora, uma parceira na sua segurança.
-              </h3>
-              <p className="leading-relaxed text-slate-100/90">
-                Estamos ao seu lado em todas as etapas, antes e depois da
-                contratação.
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-3 md:items-end">
-              <span className="rounded-xl bg-white/15 px-4 py-3 text-sm font-semibold text-white ring-1 ring-white/20">
-                Atendimento humano e ágil
-              </span>
-              <span className="rounded-xl bg-white/15 px-4 py-3 text-sm font-semibold text-white ring-1 ring-white/20">
-                Planos adequados ao seu perfil
-              </span>
-            </div>
           </div>
         </div>
       </section>
