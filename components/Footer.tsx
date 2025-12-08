@@ -53,7 +53,10 @@ export default function Footer() {
           </p>
           <p className="text-sm text-slate-200">CEP 40010-020</p>
           <div className="flex items-center gap-3 text-sm text-slate-200">
-            <a href="https://www.instagram.com" className="hover:text-white">
+            <a
+              href="https://www.instagram.com/noelycorretoradeplanosdesaude/"
+              className="hover:text-white"
+            >
               Instagram
             </a>
             <span className="h-1 w-1 rounded-full bg-slate-500" />

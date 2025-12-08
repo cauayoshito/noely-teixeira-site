@@ -45,7 +45,7 @@ export default function Header() {
 
           <div className="flex items-center gap-3 text-white/80">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/noelycorretoradeplanosdesaude/"
               aria-label="Instagram"
               className="hover:text-white"
             >
