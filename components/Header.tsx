@@ -67,7 +67,7 @@ export default function Header() {
           {/* Logo + textos */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/noelylogo.webp"
+              src="/images/noe.png"
               alt="Noely Teixeira Logo"
               width={140}
               height={60}

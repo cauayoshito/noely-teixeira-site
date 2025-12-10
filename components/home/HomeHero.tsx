@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
-const HERO_BG = "/images/noe.png";
+const HERO_BG = "/images/noely.jpg";
 const HERO_NOELY = "/images/bg.png";
 
 export default function HomeHero() {
