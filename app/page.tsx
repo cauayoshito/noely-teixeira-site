@@ -249,7 +249,7 @@ export default function HomePage() {
       </section>
 
       <CTASection
-        title="Mais que uma corretora, uma parceira na sua segurança."
+        title="Mais que uma consultora, uma parceira na sua segurança."
         subtitle="Conte com a experiência e o atendimento consultivo da Noely Teixeira para proteger o que é mais importante para você."
         buttonLabel="Fazer cotação agora mesmo"
         buttonHref="https://api.whatsapp.com/send?phone=5571996290118&text=Quero%20cotar%20um%20plano%20ou%20seguro."
